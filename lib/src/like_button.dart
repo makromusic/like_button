@@ -191,7 +191,7 @@ class LikeButtonState extends State<LikeButton> with TickerProviderStateMixin {
             children: <Widget>[
               Positioned(
                 top: (widget.size - widget.bubblesSize) / 2.0,
-                left: (widget.size - widget.bubblesSize) / 2.0,
+                left: (widget.size - widget.bubblesSize) / 2.0 + 4,
                 child: CustomPaint(
                   size: Size(widget.bubblesSize, widget.bubblesSize),
                   painter: BubblesPainter(
@@ -205,7 +205,7 @@ class LikeButtonState extends State<LikeButton> with TickerProviderStateMixin {
               ),
               Positioned(
                 top: (widget.size - widget.circleSize) / 2.0,
-                left: (widget.size - widget.circleSize) / 2.0,
+                left: (widget.size - widget.circleSize) / 2.0 + 4,
                 child: CustomPaint(
                   size: Size(widget.circleSize, widget.circleSize),
                   painter: CirclePainter(
